@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B913EB0F27D6987E0025CB6B /* ResistindoBRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB0E27D6987E0025CB6B /* ResistindoBRApp.swift */; };
+		B913EB1127D6987E0025CB6B /* PoliticiansList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB1027D6987E0025CB6B /* PoliticiansList.swift */; };
+		B913EB1327D6987F0025CB6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B913EB1227D6987F0025CB6B /* Assets.xcassets */; };
+		B913EB1627D6987F0025CB6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B913EB1527D6987F0025CB6B /* Preview Assets.xcassets */; };
+		B913EB2027D698800025CB6B /* ResistindoBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB1F27D698800025CB6B /* ResistindoBRTests.swift */; };
+		B913EB2A27D698800025CB6B /* ResistindoBRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB2927D698800025CB6B /* ResistindoBRUITests.swift */; };
+		B913EB2C27D698800025CB6B /* ResistindoBRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB2B27D698800025CB6B /* ResistindoBRUITestsLaunchTests.swift */; };
+		B913EB3A27D6996B0025CB6B /* RequestPolitians.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB3927D6996B0025CB6B /* RequestPolitians.swift */; };
+		B913EB3C27D699B40025CB6B /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB3B27D699B40025CB6B /* BaseRequest.swift */; };
+		B913EB3F27D69C670025CB6B /* CamaraResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB3E27D69C670025CB6B /* CamaraResult.swift */; };
+		B913EB4227D69EC90025CB6B /* CamaraDeputadosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB4127D69EC90025CB6B /* CamaraDeputadosModel.swift */; };
+		B913EB4527D6A2C80025CB6B /* DeputadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB4427D6A2C80025CB6B /* DeputadoView.swift */; };
+		B913EB4727D6A3E40025CB6B /* AsyncWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB4627D6A3E40025CB6B /* AsyncWebImageView.swift */; };
+		B913EB4927D6A4280025CB6B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB4827D6A4280025CB6B /* ImageLoader.swift */; };
+		B913EB4B27D6A4480025CB6B /* SpinnerLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913EB4A27D6A4480025CB6B /* SpinnerLoading.swift */; };
+		B925348927DA45A000E6388D /* PoliticianDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925348827DA45A000E6388D /* PoliticianDetailView.swift */; };
+		B925348B27DA78E100E6388D /* DeputadosDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925348A27DA78E100E6388D /* DeputadosDetail.swift */; };
+		B925348D27DA891200E6388D /* base.strings in Resources */ = {isa = PBXBuildFile; fileRef = B925348C27DA891200E6388D /* base.strings */; };
+		B925349027DA8A9700E6388D /* DeputadoStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925348F27DA8A9700E6388D /* DeputadoStrings.swift */; };
+		B925349227DB862400E6388D /* RequestPoliticalPartyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925349127DB862400E6388D /* RequestPoliticalPartyDetail.swift */; };
+		B925349427DB943E00E6388D /* AsyncSquareWebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B925349327DB943E00E6388D /* AsyncSquareWebImageView.swift */; };
+		B948F82D27D7884E00C36322 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F82C27D7884E00C36322 /* StringExtensions.swift */; };
+		B948F82F27D78C6900C36322 /* PartidoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F82E27D78C6900C36322 /* PartidoResult.swift */; };
+		B948F83327D78E8F00C36322 /* RequestPoliticalParties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F83227D78E8F00C36322 /* RequestPoliticalParties.swift */; };
+		B948F83527D78FFA00C36322 /* BaseResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F83427D78FFA00C36322 /* BaseResultData.swift */; };
+		B948F83727D7929B00C36322 /* PaginatedBaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F83627D7929B00C36322 /* PaginatedBaseObject.swift */; };
+		B948F83927D792BA00C36322 /* PartidosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B948F83827D792BA00C36322 /* PartidosModel.swift */; };
+		B95EFE8727D7F47D00BFF9FC /* PoliticalPartyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95EFE8627D7F47D00BFF9FC /* PoliticalPartyListView.swift */; };
+		B95EFE8927D8E67200BFF9FC /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95EFE8827D8E67200BFF9FC /* ArrayExtensions.swift */; };
+		B95EFE8B27D8E93E00BFF9FC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95EFE8A27D8E93E00BFF9FC /* SearchBar.swift */; };
+		B95EFE8D27D96D2600BFF9FC /* RequestPolitianDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95EFE8C27D96D2600BFF9FC /* RequestPolitianDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B913EB1C27D698800025CB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B913EB0327D6987E0025CB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B913EB0A27D6987E0025CB6B;
+			remoteInfo = ResistindoBR;
+		};
+		B913EB2627D698800025CB6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B913EB0327D6987E0025CB6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B913EB0A27D6987E0025CB6B;
+			remoteInfo = ResistindoBR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B913EB0B27D6987E0025CB6B /* ResistindoBR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResistindoBR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B913EB0E27D6987E0025CB6B /* ResistindoBRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistindoBRApp.swift; sourceTree = "<group>"; };
+		B913EB1027D6987E0025CB6B /* PoliticiansList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticiansList.swift; sourceTree = "<group>"; };
+		B913EB1227D6987F0025CB6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B913EB1527D6987F0025CB6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B913EB1B27D698800025CB6B /* ResistindoBRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResistindoBRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B913EB1F27D698800025CB6B /* ResistindoBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistindoBRTests.swift; sourceTree = "<group>"; };
+		B913EB2527D698800025CB6B /* ResistindoBRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResistindoBRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B913EB2927D698800025CB6B /* ResistindoBRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistindoBRUITests.swift; sourceTree = "<group>"; };
+		B913EB2B27D698800025CB6B /* ResistindoBRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResistindoBRUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B913EB3927D6996B0025CB6B /* RequestPolitians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPolitians.swift; sourceTree = "<group>"; };
+		B913EB3B27D699B40025CB6B /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		B913EB3E27D69C670025CB6B /* CamaraResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaraResult.swift; sourceTree = "<group>"; };
+		B913EB4127D69EC90025CB6B /* CamaraDeputadosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamaraDeputadosModel.swift; sourceTree = "<group>"; };
+		B913EB4427D6A2C80025CB6B /* DeputadoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeputadoView.swift; sourceTree = "<group>"; };
+		B913EB4627D6A3E40025CB6B /* AsyncWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncWebImageView.swift; sourceTree = "<group>"; };
+		B913EB4827D6A4280025CB6B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B913EB4A27D6A4480025CB6B /* SpinnerLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerLoading.swift; sourceTree = "<group>"; };
+		B925348827DA45A000E6388D /* PoliticianDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticianDetailView.swift; sourceTree = "<group>"; };
+		B925348A27DA78E100E6388D /* DeputadosDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeputadosDetail.swift; sourceTree = "<group>"; };
+		B925348C27DA891200E6388D /* base.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = base.strings; sourceTree = "<group>"; };
+		B925348F27DA8A9700E6388D /* DeputadoStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeputadoStrings.swift; sourceTree = "<group>"; };
+		B925349127DB862400E6388D /* RequestPoliticalPartyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPoliticalPartyDetail.swift; sourceTree = "<group>"; };
+		B925349327DB943E00E6388D /* AsyncSquareWebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSquareWebImageView.swift; sourceTree = "<group>"; };
+		B948F82C27D7884E00C36322 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		B948F82E27D78C6900C36322 /* PartidoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidoResult.swift; sourceTree = "<group>"; };
+		B948F83227D78E8F00C36322 /* RequestPoliticalParties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPoliticalParties.swift; sourceTree = "<group>"; };
+		B948F83427D78FFA00C36322 /* BaseResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResultData.swift; sourceTree = "<group>"; };
+		B948F83627D7929B00C36322 /* PaginatedBaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedBaseObject.swift; sourceTree = "<group>"; };
+		B948F83827D792BA00C36322 /* PartidosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartidosModel.swift; sourceTree = "<group>"; };
+		B95EFE8627D7F47D00BFF9FC /* PoliticalPartyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliticalPartyListView.swift; sourceTree = "<group>"; };
+		B95EFE8827D8E67200BFF9FC /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		B95EFE8A27D8E93E00BFF9FC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		B95EFE8C27D96D2600BFF9FC /* RequestPolitianDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPolitianDetail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B913EB0827D6987E0025CB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB1827D698800025CB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB2227D698800025CB6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B913EB0227D6987E0025CB6B = {
+			isa = PBXGroup;
+			children = (
+				B913EB0D27D6987E0025CB6B /* ResistindoBR */,
+				B913EB1E27D698800025CB6B /* ResistindoBRTests */,
+				B913EB2827D698800025CB6B /* ResistindoBRUITests */,
+				B913EB0C27D6987E0025CB6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B913EB0C27D6987E0025CB6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB0B27D6987E0025CB6B /* ResistindoBR.app */,
+				B913EB1B27D698800025CB6B /* ResistindoBRTests.xctest */,
+				B913EB2527D698800025CB6B /* ResistindoBRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B913EB0D27D6987E0025CB6B /* ResistindoBR */ = {
+			isa = PBXGroup;
+			children = (
+				B925348E27DA89F200E6388D /* Utils */,
+				B95EFE8527D7EEB700BFF9FC /* Application */,
+				B948F82B27D7883D00C36322 /* Extensions */,
+				B913EB4327D6A2B20025CB6B /* View */,
+				B913EB3D27D69C5C0025CB6B /* Model */,
+				B913EB3827D6988B0025CB6B /* Networking */,
+				B913EB0E27D6987E0025CB6B /* ResistindoBRApp.swift */,
+				B913EB1227D6987F0025CB6B /* Assets.xcassets */,
+				B913EB1427D6987F0025CB6B /* Preview Content */,
+				B925348C27DA891200E6388D /* base.strings */,
+			);
+			path = ResistindoBR;
+			sourceTree = "<group>";
+		};
+		B913EB1427D6987F0025CB6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB1527D6987F0025CB6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B913EB1E27D698800025CB6B /* ResistindoBRTests */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB1F27D698800025CB6B /* ResistindoBRTests.swift */,
+			);
+			path = ResistindoBRTests;
+			sourceTree = "<group>";
+		};
+		B913EB2827D698800025CB6B /* ResistindoBRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB2927D698800025CB6B /* ResistindoBRUITests.swift */,
+				B913EB2B27D698800025CB6B /* ResistindoBRUITestsLaunchTests.swift */,
+			);
+			path = ResistindoBRUITests;
+			sourceTree = "<group>";
+		};
+		B913EB3827D6988B0025CB6B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB3927D6996B0025CB6B /* RequestPolitians.swift */,
+				B95EFE8C27D96D2600BFF9FC /* RequestPolitianDetail.swift */,
+				B913EB3B27D699B40025CB6B /* BaseRequest.swift */,
+				B948F83227D78E8F00C36322 /* RequestPoliticalParties.swift */,
+				B925349127DB862400E6388D /* RequestPoliticalPartyDetail.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B913EB3D27D69C5C0025CB6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B948F83127D78D2C00C36322 /* Partidos */,
+				B948F83027D78D1300C36322 /* Deputados */,
+				B948F83427D78FFA00C36322 /* BaseResultData.swift */,
+				B948F83627D7929B00C36322 /* PaginatedBaseObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B913EB4327D6A2B20025CB6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB4A27D6A4480025CB6B /* SpinnerLoading.swift */,
+				B913EB4427D6A2C80025CB6B /* DeputadoView.swift */,
+				B913EB4627D6A3E40025CB6B /* AsyncWebImageView.swift */,
+				B925349327DB943E00E6388D /* AsyncSquareWebImageView.swift */,
+				B913EB4827D6A4280025CB6B /* ImageLoader.swift */,
+				B95EFE8A27D8E93E00BFF9FC /* SearchBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B925348E27DA89F200E6388D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B925348F27DA8A9700E6388D /* DeputadoStrings.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B948F82B27D7883D00C36322 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B948F82C27D7884E00C36322 /* StringExtensions.swift */,
+				B95EFE8827D8E67200BFF9FC /* ArrayExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B948F83027D78D1300C36322 /* Deputados */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB3E27D69C670025CB6B /* CamaraResult.swift */,
+				B913EB4127D69EC90025CB6B /* CamaraDeputadosModel.swift */,
+				B925348A27DA78E100E6388D /* DeputadosDetail.swift */,
+			);
+			path = Deputados;
+			sourceTree = "<group>";
+		};
+		B948F83127D78D2C00C36322 /* Partidos */ = {
+			isa = PBXGroup;
+			children = (
+				B948F82E27D78C6900C36322 /* PartidoResult.swift */,
+				B948F83827D792BA00C36322 /* PartidosModel.swift */,
+			);
+			path = Partidos;
+			sourceTree = "<group>";
+		};
+		B95EFE8527D7EEB700BFF9FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B913EB1027D6987E0025CB6B /* PoliticiansList.swift */,
+				B95EFE8627D7F47D00BFF9FC /* PoliticalPartyListView.swift */,
+				B925348827DA45A000E6388D /* PoliticianDetailView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B913EB0A27D6987E0025CB6B /* ResistindoBR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B913EB2F27D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBR" */;
+			buildPhases = (
+				B913EB0727D6987E0025CB6B /* Sources */,
+				B913EB0827D6987E0025CB6B /* Frameworks */,
+				B913EB0927D6987E0025CB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResistindoBR;
+			productName = ResistindoBR;
+			productReference = B913EB0B27D6987E0025CB6B /* ResistindoBR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B913EB1A27D698800025CB6B /* ResistindoBRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B913EB3227D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBRTests" */;
+			buildPhases = (
+				B913EB1727D698800025CB6B /* Sources */,
+				B913EB1827D698800025CB6B /* Frameworks */,
+				B913EB1927D698800025CB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B913EB1D27D698800025CB6B /* PBXTargetDependency */,
+			);
+			name = ResistindoBRTests;
+			productName = ResistindoBRTests;
+			productReference = B913EB1B27D698800025CB6B /* ResistindoBRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B913EB2427D698800025CB6B /* ResistindoBRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B913EB3527D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBRUITests" */;
+			buildPhases = (
+				B913EB2127D698800025CB6B /* Sources */,
+				B913EB2227D698800025CB6B /* Frameworks */,
+				B913EB2327D698800025CB6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B913EB2727D698800025CB6B /* PBXTargetDependency */,
+			);
+			name = ResistindoBRUITests;
+			productName = ResistindoBRUITests;
+			productReference = B913EB2527D698800025CB6B /* ResistindoBRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B913EB0327D6987E0025CB6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B913EB0A27D6987E0025CB6B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B913EB1A27D698800025CB6B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B913EB0A27D6987E0025CB6B;
+					};
+					B913EB2427D698800025CB6B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B913EB0A27D6987E0025CB6B;
+					};
+				};
+			};
+			buildConfigurationList = B913EB0627D6987E0025CB6B /* Build configuration list for PBXProject "ResistindoBR" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-BR",
+			);
+			mainGroup = B913EB0227D6987E0025CB6B;
+			productRefGroup = B913EB0C27D6987E0025CB6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B913EB0A27D6987E0025CB6B /* ResistindoBR */,
+				B913EB1A27D698800025CB6B /* ResistindoBRTests */,
+				B913EB2427D698800025CB6B /* ResistindoBRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B913EB0927D6987E0025CB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B913EB1627D6987F0025CB6B /* Preview Assets.xcassets in Resources */,
+				B925348D27DA891200E6388D /* base.strings in Resources */,
+				B913EB1327D6987F0025CB6B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB1927D698800025CB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB2327D698800025CB6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B913EB0727D6987E0025CB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B948F82F27D78C6900C36322 /* PartidoResult.swift in Sources */,
+				B925349227DB862400E6388D /* RequestPoliticalPartyDetail.swift in Sources */,
+				B913EB4227D69EC90025CB6B /* CamaraDeputadosModel.swift in Sources */,
+				B913EB3C27D699B40025CB6B /* BaseRequest.swift in Sources */,
+				B948F83327D78E8F00C36322 /* RequestPoliticalParties.swift in Sources */,
+				B913EB3F27D69C670025CB6B /* CamaraResult.swift in Sources */,
+				B95EFE8D27D96D2600BFF9FC /* RequestPolitianDetail.swift in Sources */,
+				B948F83927D792BA00C36322 /* PartidosModel.swift in Sources */,
+				B913EB1127D6987E0025CB6B /* PoliticiansList.swift in Sources */,
+				B95EFE8927D8E67200BFF9FC /* ArrayExtensions.swift in Sources */,
+				B925348927DA45A000E6388D /* PoliticianDetailView.swift in Sources */,
+				B913EB4727D6A3E40025CB6B /* AsyncWebImageView.swift in Sources */,
+				B913EB4927D6A4280025CB6B /* ImageLoader.swift in Sources */,
+				B925349027DA8A9700E6388D /* DeputadoStrings.swift in Sources */,
+				B948F82D27D7884E00C36322 /* StringExtensions.swift in Sources */,
+				B948F83527D78FFA00C36322 /* BaseResultData.swift in Sources */,
+				B913EB3A27D6996B0025CB6B /* RequestPolitians.swift in Sources */,
+				B925349427DB943E00E6388D /* AsyncSquareWebImageView.swift in Sources */,
+				B913EB4527D6A2C80025CB6B /* DeputadoView.swift in Sources */,
+				B925348B27DA78E100E6388D /* DeputadosDetail.swift in Sources */,
+				B913EB4B27D6A4480025CB6B /* SpinnerLoading.swift in Sources */,
+				B95EFE8B27D8E93E00BFF9FC /* SearchBar.swift in Sources */,
+				B948F83727D7929B00C36322 /* PaginatedBaseObject.swift in Sources */,
+				B913EB0F27D6987E0025CB6B /* ResistindoBRApp.swift in Sources */,
+				B95EFE8727D7F47D00BFF9FC /* PoliticalPartyListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB1727D698800025CB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B913EB2027D698800025CB6B /* ResistindoBRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B913EB2127D698800025CB6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B913EB2C27D698800025CB6B /* ResistindoBRUITestsLaunchTests.swift in Sources */,
+				B913EB2A27D698800025CB6B /* ResistindoBRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B913EB1D27D698800025CB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B913EB0A27D6987E0025CB6B /* ResistindoBR */;
+			targetProxy = B913EB1C27D698800025CB6B /* PBXContainerItemProxy */;
+		};
+		B913EB2727D698800025CB6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B913EB0A27D6987E0025CB6B /* ResistindoBR */;
+			targetProxy = B913EB2627D698800025CB6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B913EB2D27D698800025CB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B913EB2E27D698800025CB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B913EB3027D698800025CB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ResistindoBR/Preview Content\"";
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B913EB3127D698800025CB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ResistindoBR/Preview Content\"";
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B913EB3327D698800025CB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResistindoBR.app/ResistindoBR";
+			};
+			name = Debug;
+		};
+		B913EB3427D698800025CB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResistindoBR.app/ResistindoBR";
+			};
+			name = Release;
+		};
+		B913EB3627D698800025CB6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResistindoBR;
+			};
+			name = Debug;
+		};
+		B913EB3727D698800025CB6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L2B57UYMNM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.gerlandiolucena.resistindo.ResistindoBRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ResistindoBR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B913EB0627D6987E0025CB6B /* Build configuration list for PBXProject "ResistindoBR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B913EB2D27D698800025CB6B /* Debug */,
+				B913EB2E27D698800025CB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B913EB2F27D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B913EB3027D698800025CB6B /* Debug */,
+				B913EB3127D698800025CB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B913EB3227D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B913EB3327D698800025CB6B /* Debug */,
+				B913EB3427D698800025CB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B913EB3527D698800025CB6B /* Build configuration list for PBXNativeTarget "ResistindoBRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B913EB3627D698800025CB6B /* Debug */,
+				B913EB3727D698800025CB6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B913EB0327D6987E0025CB6B /* Project object */;
+}
